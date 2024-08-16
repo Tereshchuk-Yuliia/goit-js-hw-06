@@ -1,26 +1,27 @@
 
 const customer = {
-  username: "Mango",
-  balance: 24000,
-  discount: 0.1,
-  orders: ["Burger", "Pizza", "Salad"],
+
+    username: "Mango",
+    balance: 24000,
+    discount: 0.1,
+    orders: ["Burger", "Pizza", "Salad"],
   // Change code below this line
-  getBalance() {
+    getBalance() {
     return this.balance;
-  },
-  getDiscount() {
+},
+    getDiscount() {
     return this.discount;
-  },
-  setDiscount(value) {
+},
+    setDiscount(value) {
     this.discount = value;
-  },
-  getOrders() {
+},
+    getOrders() {
     return this.orders;
-  },
-  addOrder(cost, order) {
+},
+    addOrder(cost, order) {
     this.balance -= cost - cost * this.discount;
     this.orders.push(order);
-  },
+},
   // Change code above this line
 };
 
